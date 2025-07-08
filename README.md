@@ -26,7 +26,7 @@ This is a simple AI chatbot built using PyTorch and NLTK. It uses intent classif
 - pip install numpy torch nltk
 
 ### 3. Train the model
--- python train_model.py
+- python train_model.py
 
 ### 4. Launch the Web App
 - python app.py
