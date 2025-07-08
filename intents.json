@@ -1,0 +1,165 @@
+{
+  "intents": [
+    {
+      "tag": "greeting_general",
+      "patterns": ["hello", "hi", "hey"],
+      "responses": ["Hello!", "Hi there!", "Greetings!", "Hey!"]
+    },
+    {
+      "tag": "greeting_morning",
+      "patterns": ["good morning", "morning"],
+      "responses": ["Good morning! Hope you have a productive day."]
+    },
+    {
+      "tag": "greeting_afternoon",
+      "patterns": ["good afternoon", "afternoon"],
+      "responses": ["Good afternoon! How can I help you?"]
+    },
+    {
+      "tag": "greeting_evening",
+      "patterns": ["good evening", "evening"],
+      "responses": ["Good evening! How was your day?"]
+    },
+    {
+      "tag": "greeting_night",
+      "patterns": ["good night", "night"],
+      "responses": ["Good night! Sleep well."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "see you", "goodbye", "exit", "quit"],
+      "responses": ["Goodbye!", "See you later!", "Have a great day!"]
+    },
+    {
+      "tag": "time",
+      "patterns": ["what time is it", "tell me the time", "current time", "time please"],
+      "responses": ["Let me check the current time for you."]
+    },
+    {
+      "tag": "date",
+      "patterns": ["what's the date", "today's date", "current date"],
+      "responses": ["Let me check today's date for you."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["tell me a joke", "make me laugh", "funny joke"],
+      "responses": ["Why don't scientists trust atoms? Because they make up everything!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "appreciate it"],
+      "responses": ["You're welcome!", "No problem!", "Happy to help!"]
+    },
+    {
+      "tag": "open_youtube",
+      "patterns": ["open youtube", "start youtube", "go to youtube"],
+      "responses": ["Opening YouTube..."]
+    },
+    {
+      "tag": "open_google",
+      "patterns": ["open google", "start google", "go to google"],
+      "responses": ["Opening Google..."]
+    },
+    {
+      "tag": "open_gmail",
+      "patterns": ["check mail", "open gmail", "start gmail", "launch gmail", "go to gmail"],
+      "responses": ["Opening Gmail..."]
+    },
+    {
+      "tag": "open_maps",
+      "patterns": ["open maps", "show me the map", "open google maps"],
+      "responses": ["Opening Google Maps..."]
+    },
+    {
+      "tag": "open_github",
+      "patterns": ["open github", "show me github", "go to github"],
+      "responses": ["Opening GitHub..."]
+    },
+    {
+      "tag": "open_linkedin",
+      "patterns": ["open linkedin", "show me linkedin", "go to linkedin"],
+      "responses": ["Opening LinkedIn..."]
+    },
+    {
+      "tag": "open_chatgpt",
+      "patterns": ["open chatgpt", "go to chatgpt", "open ai chatbot"],
+      "responses": ["Opening ChatGPT..."]
+    },
+    {
+      "tag": "open_netflix",
+      "patterns": ["open netflix", "start netflix", "watch netflix"],
+      "responses": ["Opening Netflix..."]
+    },
+    {
+      "tag": "open_amazon",
+      "patterns": ["open amazon", "shop amazon", "go to amazon"],
+      "responses": ["Opening Amazon..."]
+    },
+    {
+      "tag": "open_claude",
+      "patterns": ["open claude", "start claude ai", "go to claude ai", "launch claude"],
+      "responses": ["Opening Claude AI..."]
+    },
+    {
+      "tag": "open_calculator",
+      "patterns": ["open calculator", "start calculator", "launch calculator"],
+      "responses": ["Opening Calculator..."]
+    },
+    {
+      "tag": "open_cmd",
+      "patterns": ["open command prompt", "start cmd", "launch command prompt"],
+      "responses": ["Opening Command Prompt..."]
+    },
+    {
+      "tag": "open_notepad",
+      "patterns": ["open notepad", "start notepad", "write something"],
+      "responses": ["Opening Notepad..."]
+    },
+    {
+      "tag": "open_word",
+      "patterns": ["open word", "start ms word", "launch microsoft word"],
+      "responses": ["Opening Microsoft Word..."]
+    },
+    {
+      "tag": "open_excel",
+      "patterns": ["open excel", "start excel", "launch spreadsheet"],
+      "responses": ["Opening Microsoft Excel..."]
+    },
+    {
+      "tag": "open_powerpoint",
+      "patterns": ["open powerpoint", "start powerpoint", "launch presentation"],
+      "responses": ["Opening Microsoft PowerPoint..."]
+    },
+    {
+      "tag": "open_whatsapp_web",
+      "patterns": ["open whatsapp", "whatsapp web", "start whatsapp"],
+      "responses": ["Opening WhatsApp Web..."]
+    },
+    {
+      "tag": "open_facebook",
+      "patterns": ["open facebook", "go to facebook", "facebook login"],
+      "responses": ["Opening Facebook..."]
+    },
+    {
+      "tag": "open_instagram",
+      "patterns": ["open instagram", "go to instagram", "show me instagram"],
+      "responses": ["Opening Instagram..."]
+    },
+    {
+      "tag": "file_search",
+      "patterns": [
+        "find file",
+        "open file",
+        "search file",
+        "locate file",
+        "find report",
+        "search document"
+      ],
+      "responses": [
+        "What file name are you looking for?",
+        "Sure, tell me the file name to search.",
+        "Okay, type the file name you'd like to find."
+      ]
+    }
+  ]
+}

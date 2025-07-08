@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1 class="title">AI Assistant</h1>
+
+  <div class="chat-wrapper">
+    <div class="chat-box" id="chat-box"></div>
+
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Ask me anything..." autocomplete="off" />
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const inputField = document.getElementById("user-input");
+    const sendButton = document.getElementById("send-btn");
+
+    inputField.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        sendButton.click();
+      }
+    });
+
+    async function sendMessage() {
+      const message = inputField.value.trim();
+      if (!message) return;
+
+      const chatBox = document.getElementById("chat-box");
+      chatBox.innerHTML += `<div class="chat-message user"><span>You</span><p>${message}</p></div>`;
+
+      const res = await fetch("/get", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await res.json();
+      const response = data.response;
+
+      chatBox.innerHTML += `<div class="chat-message bot"><span>Assistant</span><p>${response}</p></div>`;
+
+      inputField.value = "";
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // Exit condition – closes tab on quit/goodbye
+      const exitResponses = ["goodbye", "see you later", "have a great day"];
+      if (exitResponses.some(exit => response.toLowerCase().includes(exit))) {
+        setTimeout(() => {
+          window.close();
+        }, 1500); // wait for message to show
+      }
+    }
+  </script>
+</body>
+</html>
