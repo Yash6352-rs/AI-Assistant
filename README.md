@@ -7,7 +7,7 @@ This is a simple AI chatbot built using PyTorch and NLTK. It uses intent classif
 ## ✨ Features
 
 - Intent classification using a neural network
-- Predefined responses for greetings, jokes, and thank yous
+- Predefined responses for greetings, jokes, and thank you
 - Tells current time and date
 - Opens websites (YouTube, Google, Gmail, etc.)
 - Opens desktop applications (Notepad, Calculator, CMD, etc.)
