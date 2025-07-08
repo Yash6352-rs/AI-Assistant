@@ -19,8 +19,8 @@ This is a simple AI chatbot built using PyTorch and NLTK. It uses intent classif
 ## 🔧 Setup Instructions
 
 ### 1. Clone or download the project
-git clone https://github.com/Yash6352-rs/AI_Assistant.git
-cd AI_Assistant
+- git clone https://github.com/Yash6352-rs/AI_Assistant.git
+- cd AI_Assistant
 
 ### 2. Install dependencies
 pip install numpy torch nltk
