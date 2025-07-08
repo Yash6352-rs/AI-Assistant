@@ -17,7 +17,7 @@ pip install numpy torch nltk
 python train_model.py
 
 ### 4. Run the chatbot
-python assistant.py
+python app.py
 
 Type quit to exit.
 
