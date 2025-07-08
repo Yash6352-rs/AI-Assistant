@@ -23,18 +23,18 @@ This is a simple AI chatbot built using PyTorch and NLTK. It uses intent classif
 - cd AI_Assistant
 
 ### 2. Install dependencies
-pip install numpy torch nltk
+- pip install numpy torch nltk
 
 ### 3. Train the model
-python train_model.py
+-- python train_model.py
 
 ### 4. Launch the Web App
-python app.py
+- python app.py
 
-Then open your browser and go to:
-http://127.0.0.1:5000/
+- Then open your browser and go to:
+- http://127.0.0.1:5000/
 
-Type quit to exit.
+- Type quit to exit.
 
 ---
 
